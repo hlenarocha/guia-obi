@@ -1,0 +1,162 @@
+@keyframes opacity-change {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: auto;
+  padding: 0;
+}
+
+main {
+  padding: 40px;
+  background-color: aliceblue;
+}
+
+h1 {
+  color: #FFC438;
+  text-align: center;
+}
+
+h2 {
+  color: #265BA8;
+  
+
+}
+
+h3 {
+  color: #3eaee2;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-obi {
+  width: 100px;
+  animation: opacity-change 3.5s infinite;
+}
+
+.title-container {
+  background-color: #265BA8;
+  padding: 40px;
+  border-bottom: 7px solid #FFC438;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#menu {
+  display: flex;
+  background-color: #6BC1E9;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  border-bottom: 7px solid #FFC438;
+  
+}
+
+button {
+  background-color: #265BA8;
+  padding: 15px;
+  margin-top: 20px;
+  
+  
+  border-radius: 16px;
+  border: 2px solid #FFC438;
+  color: white;
+  cursor: pointer;
+  width: 40%;
+}
+
+#introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#introducao, #linguagens-permitidas, #mais-informacoes, #comentarios {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#menu-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#menu-nav > li {
+  list-style: none;
+  padding-right: 40px;
+}
+
+#menu-nav > li > a {
+  text-decoration: none;
+  color: #15325e;
+  font-size: large;
+}
+
+#menu-nav > li > a:hover {
+  color: white;
+  border-bottom: 2px solid #FFC438;
+  transition-duration: 0.7s;
+}
+
+footer {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border-top: 7px solid #FFC438;
+  background-color: #265BA8;
+  color: white;
+}
+
+hr {
+  color: #265BA8;
+}
+
+span {
+  color: #15325e;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input, textarea {
+  background-color: #ddecff;
+  border-radius: 16px;
+  padding: 10px;
+  border: 2px solid #FFC438;
+}
+
+textarea {
+  height: 100px;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.5;
+}
