@@ -12,6 +12,17 @@
   }
 }
 
+.quiz-container {
+  background-image: linear-gradient(to bottom, #f3f8ff, #fcf5e5);
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+
+}
+
 body {
   margin: auto;
   padding: 0;
@@ -19,7 +30,9 @@ body {
 
 main {
   padding: 40px;
+
   background-color: aliceblue;
+  
 }
 
 h1 {
@@ -40,6 +53,7 @@ h3 {
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  
   
 }
 
@@ -84,8 +98,7 @@ button {
   background-color: #265BA8;
   padding: 15px;
   margin-top: 20px;
-  
-  
+  font-weight: bold;
   border-radius: 16px;
   border: 2px solid #FFC438;
   color: white;
@@ -99,7 +112,7 @@ button {
   gap: 20px;
 }
 
-#introducao, #linguagens-permitidas, #mais-informacoes, #comentarios {
+#introducao, #conteudo, #mais-informacoes, #comentarios {
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -154,9 +167,124 @@ input, textarea {
 
 textarea {
   height: 100px;
-  width: 20%;
+  width: 80%;
+  resize: none;
 }
 
 button:hover {
   opacity: 0.5;
+  
+}
+
+code {
+  background-color: #c8daf8; /* Cor de fundo semelhante ao estilo de código */
+  padding: 2px 4px;         /* Espaçamento ao redor do texto */
+  border-radius: 4px;       /* Bordas arredondadas */
+  font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada */
+  color: #15325e;           /* Cor do texto */
+  font-size: 0.95em; 
+}
+
+form {
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, #ddecff, #fcf5e5);
+  border: 2px solid #21539e;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #fcf5e5;
+}
+
+.referencias {
+  color:#21539e;
+  text-decoration: none;
+}
+
+.referencias:hover {
+  opacity: 50%;
+}
+
+/* Estilos específicos para o quiz */
+.quiz-container {
+  background-color: #f9f9f9; /* Fundo claro para o quiz */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#options {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding-left: 0;
+}
+
+#options li {
+  background-color: #fff; /* Fundo branco para as opções */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#options li:hover {
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do botão "Próxima" */
+#next-btn {
+  background-color: #007bff; /* Cor de fundo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilo do container de resultados */
+.result-container {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.result-container button {
+  background-color: #28a745; /* Cor de fundo para o botão de reiniciar */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-container button:hover {
+  background-color: #218838; /* Cor ao passar o mouse */
 }

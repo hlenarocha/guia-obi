@@ -6,12 +6,18 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" href="./assets/obi.png">
   <title>Guia | OBI</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Inclui o seu script -->
+  <script src="./scripts/inputValidator.js" defer></script>
+
   
 </head>
 <body>
+  <script src="./scripts/quiz.js" defer></script>
+
     <div class="title-container">
       <div class="img-container">
-        <img class="img-obi" src="./assets/obi.png">
+        <img class="img-obi" src="./assets/obi.png" alt="Logo da Olimpíada Brasileira de Informática">
 
       </div>
       <h1>Guia para a Olimpíada Brasileira de Informática</h1>
@@ -21,7 +27,9 @@
     <header id="menu">
       <ul id="menu-nav">
         <li><a href="#introducao">Introdução</a></li>
-        <li><a href="#linguagens-permitidas">Linguagens Permitidas</a></li>
+        <li><a href="#conteudo">Conteúdo</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+
         <li><a href="#mais-informacoes">Mais informações</a></li>
         <li><a href="#comentarios">Comentários</a></li>
       </ul>
@@ -32,31 +40,31 @@
       <div>
         <h2>Introdução</h2>
         <h3>Sobre a OBI</h3>
-        <p>A Olimpíada Brasileira de Informática (OBI) é uma competição que exige raciocínio lógico, habilidades em programação e a capacidade de resolver problemas de forma eficiente. 
+        <p>A <a class="referencias" href="https://olimpiada.ic.unicamp.br/">Olimpíada Brasileira de Informática (OBI)</a> é uma competição que exige raciocínio lógico, habilidades em programação e a capacidade de resolver problemas de forma eficiente. 
           <p>Se você está se preparando para a prova, é importante estar ciente das linguagens de programação permitidas, suas características e como utilizá-las adequadamente na prova.</p> 
       </div>
       <div>
         <h3>Sobre o site</h3>
-        <p>Este site, desenvolvido para o Projeto de Extensão "Estrutura de Dados, Algoritmos e Desafios de Programação" da Universidade Estadual de Ponta Grossa (UEPG), ajudará você a entender quais linguagens podem ser usadas na Modalidade Programação e algumas dicas importantes para maximizar seu desempenho.</p>
+        <p>Este site, desenvolvido para o <strong>Projeto  de Extensão "Estrutura de Dados, Algoritmos e Desafios de Programação"</strong> da Universidade Estadual de Ponta Grossa (UEPG), ajudará você a entender quais linguagens podem ser usadas na <a class="referencias" href="https://olimpiada.ic.unicamp.br/prepare/estude/">Modalidade Programação</a> e algumas dicas importantes para maximizar seu desempenho.</p>
 
       </div>
     
     </div>
     <hr>
-    <div id="linguagens-permitidas">
+    <div id="conteudo">
       <h2>Linguagens Permitidas</h2>
-      <p>Na OBI, as linguagens permitidas na Modalidade Programação são: C, C++, Java, Python e JavaScript. No momento da prova, você deve selecionar uma delas para desenvolver o código de resolução do problema apresentado. Confira abaixo uma visão geral e dicas sobre cada linguagem.</p>
+      <p>Na <a class="referencias" href="https://olimpiada.ic.unicamp.br/prepare/estude/">Modalidade Programação</a>, as linguagens permitidas são: <code>C</code>, <code>C++</code>, <code>Java</code>, <code>Python</code> e <code>JavaScript</code>. No momento da prova, você deve selecionar uma delas para desenvolver o código de resolução do problema apresentado. Confira abaixo uma visão geral e dicas sobre cada linguagem:</p>
     
 
     <div id="c">
       <h3>C</h3>
         <ul>
-          <li>Extensão de arquivo: .c</li>
-          <li>Funções de entrada/saída: scanf, getchar, printf, putchar</li>
+          <li>Extensão de arquivo: <code>.c</code></li>
+          <li>Funções de entrada/saída: <code>scanf</code>, <code>getchar</code>, <code>printf</code>, <code>putchar</code></li>
           <li>Dicas
             <ul>
               <li>Evite usar bibliotecas adicionais para entrada e saída, além das padrões.</li>
-              <li>C é uma linguagem eficiente, sendo uma boa escolha para tarefas que exigem alto desempenho.</li>
+              <li><code>C</code> é uma linguagem eficiente, sendo uma boa escolha para tarefas que exigem alto desempenho.</li>
               <li>Preste atenção ao gerenciamento de memória, pois é um fator crucial na correção.</li>
             </ul>
           </li>
@@ -66,13 +74,13 @@
     <div id="cpp">
       <h3>C++</h3>
         <ul>
-          <li>Extensão de arquivo: .cpp</li>
-          <li>Funções de entrada/saída: scanf, getchar, printf, putchar, ou os objetos cin e cout</li>
+          <li>Extensão de arquivo: <code>.cpp</code></li>
+          <li>Funções de entrada/saída: <code>scanf</code>, <code>getchar</code>, <code>printf</code>, <code>putchar</code>, ou os objetos <code>cin</code> e <code>cout</code></li>
           <li>Dicas
             <ul>
-              <li>C++ oferece maior flexibilidade e recursos mais modernos que C, como a STL (Standard Template Library).</li>
-              <li>O uso de cin e cout facilita a manipulação de entrada/saída, mas scanf e printf são mais rápidos em grandes volumes de dados.</li>
-              <li>Utilize a STL para resolver problemas com estruturas de dados como vector, map e set para ganhar eficiência.</li>
+              <li><code>C++</code> oferece maior flexibilidade e recursos mais modernos que <code>C</code>, como a STL (Standard Template Library).</li>
+              <li>O uso de <code>cin</code> e <code>cout</code> facilita a manipulação de entrada/saída, mas <code>scanf</code> e <code>printf</code> são mais rápidos em grandes volumes de dados.</li>
+              <li>Utilize a STL para resolver problemas com estruturas de dados como <code>vector</code>, <code>map</code> e <code>set</code> para ganhar eficiência.</li>
             </ul>
           </li>
         </ul>
@@ -81,14 +89,14 @@
     <div id="java">
       <h3>Java</h3>
         <ul>
-          <li>Extensão de arquivo: .java</li>
-          <li>Funções de entrada/saída: Scanner, BufferedReader, BufferedWriter, System.out.println</li>
+          <li>Extensão de arquivo: <code>.java</code></li>
+          <li>Funções de entrada/saída: <code>Scanner</code>, <code>BufferedReader</code>, <code>BufferedWriter</code>, <code>System.out.println</code></li>
           <li>Dicas
             <ul>
               <li>Lembre-se de que a classe principal deve ter o mesmo nome do arquivo e este deve ser em letras minúsculas.</li>
-              <li>Não use o comando package em sua solução.</li>
-              <li>Java tem um desempenho inferior em comparação a C/C++ para tarefas que envolvem muito processamento, mas facilita a manipulação de strings e objetos.</li>
-              <li>Fique atento ao uso de bibliotecas padrão para entrada e saída, como Scanner e BufferedReader, que são suficientes para a prova.</li>
+              <li>Não use o comando <code>package</code> em sua solução.</li>
+              <li><code>Java</code> tem um desempenho inferior em comparação a <code>C</code>/<code>C++</code> para tarefas que envolvem muito processamento, mas facilita a manipulação de strings e objetos.</li>
+              <li>Fique atento ao uso de bibliotecas padrão para entrada e saída, como <code>Scanner</code> e <code>BufferedReader</code>, que são suficientes para a prova.</li>
             </ul>
           </li>
         </ul>
@@ -98,14 +106,14 @@
     <div id="py">
       <h3>Python</h3>
         <ul>
-          <li>Extensão de arquivo: .py</li>
-          <li>Funções de entrada/saída: input(), print(), read(), readline(), readlines()</li>
+          <li>Extensão de arquivo: <code>.py</code></li>
+          <li>Funções de entrada/saída: <code>input()</code>, <code>print()</code>, <code>read()</code>, <code>readline()</code>, <code>readlines()</code></li>
           <li>Dicas
             <ul>
-              <li>Python é uma das linguagens mais simples para escrever código, devido à sua sintaxe limpa e interpretada.</li>
-              <li>Porém, cuidado com o desempenho em problemas que exigem alto processamento, pois Python pode ser mais lento.</li>
+              <li><code>Python</code> é uma das linguagens mais simples para escrever código, devido à sua sintaxe limpa e interpretada.</li>
+              <li>Porém, cuidado com o desempenho em problemas que exigem alto processamento, pois <code>Python</code> pode ser mais lento.</li>
               <li>Utilize listas, dicionários e outras estruturas embutidas para maximizar a eficiência.</li>
-              <li>Use input() para entrada de dados e print() para saída. Lembre-se de que tudo deve ser tratado na entrada/saída padrão (teclado e tela).</li>
+              <li>Use <code>input()</code> para entrada de dados e <code>print()</code> para saída. Lembre-se de que tudo deve ser tratado na entrada/saída padrão (teclado e tela).</li>
             </ul>
           </li>
         </ul>
@@ -114,51 +122,135 @@
     <div id="js">
       <h3>JavaScript</h3>
         <ul>
-          <li>Extensão de arquivo: .js</li>
-          <li>Funções de entrada/saída: scanf, printf</li>
+          <li>Extensão de arquivo: <code>.js</code></li>
+          <li>Funções de entrada/saída: <code>scanf</code>, <code>printf</code></li>
           <li>Dicas
             <ul>
-              <li>Embora menos comum em competições de programação, JavaScript é permitido e pode ser uma opção interessante.</li>
-              <li>O ambiente de execução para JavaScript normalmente requer um pouco mais de atenção para garantir que o formato de entrada e saída esteja correto.</li>
+              <li>Embora menos comum em competições de programação, <code>JavaScript</code> é permitido e pode ser uma opção interessante.</li>
+              <li>O ambiente de execução para <code>JavaScript</code> normalmente requer um pouco mais de atenção para garantir que o formato de entrada e saída esteja correto.</li>
             
             </ul>
           </li>
         </ul>
     </div>
+
+
+<div id="dicas-importantes">
+  <h2>Dicas Importantes para a Prova</h2>
+  <ul>
+    <li><strong>Leia as Instruções Cuidadosamente:</strong> Cada tarefa da OBI tem um formato específico de entrada e saída. O seu programa deve obedecer rigorosamente esse formato, pois a correção é automatizada. Evite mensagens desnecessárias como <code>"Digite o valor de entrada"</code>, e certifique-se de seguir as especificações da tarefa.</li>
+    
+    <li><strong>Eficiência é Fundamental:</strong> As tarefas não só exigem soluções corretas, mas também eficientes. Se o seu programa demorar muito para processar, ele poderá falhar em testes maiores. Esteja atento à complexidade do seu algoritmo e escolha as melhores abordagens para otimizar seu código.</li>
+    
+    <li><strong>Testes Extensos:</strong> Sua solução será testada com diferentes entradas além dos exemplos fornecidos na tarefa. Por isso, é crucial que seu código esteja preparado para lidar com cenários variados e maiores do que os de exemplo.</li>
+    
+    <li><strong>Submissão e Avaliação:</strong> Você pode submeter até 50 soluções para cada tarefa. A pontuação final será baseada na melhor submissão. Use isso a seu favor para aprimorar sua solução gradualmente, tentando melhorias de desempenho ou corrigindo erros.</li>
+  </ul>
+</div>
+
+<div id="tabela-resumo">
+  <h2>Resumo de Funções para Entrada e Saída</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Linguagem</th>
+        <th>Função de Entrada</th>
+        <th>Função de Saída</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>C</td>
+        <td><code>scanf</code>, <code>getchar</code></td>
+        <td><code>printf</code>, <code>putchar</code></td>
+      </tr>
+      <tr>
+        <td>C++</td>
+        <td><code>cin</code>, <code>scanf</code></td>
+        <td><code>printf</code>, <code>cout</code></td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td><code>Scanner</code>, <code>BufferedReader</code></td>
+        <td><code>System.out.println</code></td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td><code>input()</code>, <code>readline()</code></td>
+        <td><code>print()</code></td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td><code>scanf</code></td>
+        <td><code>printf</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="quiz"></div>
+<hr>
+
+<h2>Quiz</h2> 
+<p>Teste o que você aprendeu por aqui com um quiz!</p>
+
+<div class="quiz-container">
+  <h1>Quiz - Modalidade de programação</h1>
+  <div id="quiz">
+      <div class="question-container">
+          <p id="question"></p>
+          <ul id="options">
+              <!-- As opções de respostas serão inseridas aqui via JS -->
+          </ul>
+      </div>
+  </div>
+  <div id="result" class="result-container">
+      <h2>Resultado:</h2>
+      <p id="score"></p>
+      <button onclick="resetQuiz()">Reiniciar Quiz</button>
+  </div>
+</div>
+
+
   </div>
 
     <hr>
     <div id="mais-informacoes">
-      <h2>Mais informações</h2>
-      <p>Para mais informações sobre a OBI, acesse:</p>
-      <p><a href="https://olimpiada.ic.unicamp.br/">Página Inicial | OBI</a></p>
-      <p><a href="https://olimpiada.ic.unicamp.br/passadas/">Anos Anteriores | OBI</a></p>
+      <h2>Mais informações</h2> 
+      <p>Para mais informações sobre a OBI, acesse os sites oficiais:</p>
+      <ul>
+        <li><a class="referencias" href="https://olimpiada.ic.unicamp.br/">Página Inicial | OBI</a></li>
+        <li><a class="referencias" href="https://olimpiada.ic.unicamp.br/passadas/">Anos Anteriores | OBI</a></li>
+      </ul>
+     
     </div>
     <hr>
     <div id="comentarios">
       <h2>Comentários</h2>
       <p>Gostou das informações deste site? Deixe abaixo seu comentário com sua dúvida ou seu feedback:</p>
-      <form>
-        <div>
-          <span>Nome:</span>
-        <input id="name" type="text" required></input>
-        <span >E-mail:</span>
-        <input id="email" type="email" required ></input>
-
-        </div>
-        <div style="margin-top: 20px; display: flex;">
-          <span>Comentário:</span>
-        <textarea  maxlength="500" id="comment" required></textarea>
-                
-
-        </div>
-        <button onclick="formValidator()">COMENTARZ</button>
-      </form>
+      <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center;">
+        <form id="commentForm">
+          <div>
+            <span>Nome:</span>
+          <input id="name" type="text" required placeholder="Seu Nome"></input>
+          <span >E-mail:</span>
+          <input id="email" type="email" required placeholder="seuemail@email.com"></input>
+  
+          </div>
+          <div style="margin-top: 20px; display: flex;">
+            <span>Comentário:</span>
+          <textarea  maxlength="500" id="comment" required placeholder="Digite aqui sua dúvida ou seu feedback..."></textarea>
+          </div>
+          <div style="width: 100%; display:flex; align-items: center; justify-content: center;">
+            <button type="submit">COMENTAR</button>
+          </div>
+        </form>
+      </div>
+      
 
       <div id="comments"></div>
     </div>
   </main>
 </body>
 <footer><p style="font-weight: bold;">&copy; 2024 Estrutura de Dados, Algoritmos e Desafios de Programação. </p>Projeto de Extensão da Universidade Estadual de Ponta Grossa (UEPG). Todos os direitos reservados.</footer>
-<script src="./scripts/inputValidator.js"></script>
 </html>
